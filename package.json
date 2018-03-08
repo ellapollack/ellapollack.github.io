@@ -1,0 +1,12 @@
+{
+  "name": "maxwellpollack.github.io",
+  "version": "1.0.0",
+  "main": "index.html",
+  "repository": "https://github.com/maxwellpollack/maxwellpollack.github.io.git",
+  "author": "Maxwell Pollack",
+  "license": "MIT",
+  "dependencies": {
+    "jqcloud2": "^2.0.3",
+    "jquery": "^3.3.1"
+  }
+}
