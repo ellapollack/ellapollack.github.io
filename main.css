@@ -1,0 +1,53 @@
+body {
+  background-color: #000;
+}
+#wrapper {
+  width: 256px;
+  left: 50%;
+  top: 15%;
+  margin-top: -55px;
+  margin-left: -128px;
+  position: absolute;
+}
+#header {
+  width: 100%;
+  height: 110px;
+  background-image: url(header.svg);
+}
+#content {
+  width: 100%;
+  color: #fff;
+  font-family: monospace;
+  font-size: 12px;
+  padding-top: 0.5em;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+h4 {
+  overflow: hidden;
+  text-align: center;
+}
+h4:before,
+h4:after {
+  background-color: white;
+  content: "";
+  display: inline-block;
+  height: 2px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+h4:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+h4:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+.panel-body {
+  height: 218px;
+  overflow-y: scroll;
+}
