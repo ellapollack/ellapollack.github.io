@@ -4,28 +4,39 @@
   <title>Maxwell Pollack</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="node_modules/jquery/dist/jquery.min.js"></script>
-  <script src="node_modules/jqcloud2/dist/jqcloud2.min.js"></script>
-  <script src="cube.js"></script>
-  <script type="text/javascript">
-    var words = [
-      {text: 'Visual Art', weight: 1},
-      {text: 'Music', weight: 2},
-      {text: 'Code', weight: 3},
-      {text: 'Astrophysics', weight: 2.5}
-    ];
-    $('#cloudNav').jQCloud(words);
-  </script>
-  <link rel="stylesheet" type="text/css" href="main.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="node_modules/jqcloud2/dist/jqcloud.min.js"></script>
+
+  <link rel="stylesheet" href="main.css">
+
 </head>
 
 <body>
-  <div id="wrapper">
-    <div id="header"></div>
-    <div id="content">
-      <div id="cloudNav"></div>
-      <canvas id="cube" width="256" height="256"></canvas>
-    </div>
+  <div class="h">
+    <a href="http://maxwellpollack.bandcamp.com" style="color:rgb(0, 178, 255)">Sound</a>
+    <a href="http://www.instagram.com/joopagogie" style="color:rgb(62, 210, 86)">Visual</a>
+    <a href="http://www.github.com/maxwellpollack" style="color:rgb(255, 255, 0)">Code</a>
+    <a href="resume.svg" style="color:rgb(255, 0, 10)">Résumé</a>
   </div>
+
+  <div id="interests"></div>
+  <script>
+    $("#interests").jQCloud([
+      {text:"Psychophysics",weight:1},
+      {text:"Acoustics",weight:1},
+      {text:"Music\nTheory",weight:1},
+      {text:"Machine\nLearning",weight:7},
+      {text:"Astrophysics",weight:5},
+      {text:"Generative\nArt",weight:5},
+      {text:"Audio\nSynthesis",weight:5},
+      {text:"♥",weight:9,color:"rgb(255, 0, 107)"}
+      ],{
+        steps:9,
+        removeOverflowing: false
+      }
+    );
+  </script>
+
 </body>
 </html>

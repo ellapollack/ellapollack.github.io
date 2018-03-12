@@ -57,22 +57,23 @@ var vertices = [
 
 // Define the vertices that compose each of the 6 faces. These numbers are
 // indices to the vertex list defined above.
-var faces = [[0,1,2,3],[1,5,6,2],[5,4,7,6],[4,0,3,7],[0,4,5,1],[3,2,6,7]]
+var faces = [[0,1,2,3],[1,5,6,2],[5,4,7,6],[4,0,3,7],[0,4,5,1],[3,2,6,7]];
 
 var angle = 0;
+var ctx, canvas;
 
 function goCube() {
-    canvas = document.getElementById("cube");
-    if( canvas && canvas.getContext ) {
-        ctx = canvas.getContext("2d");
-        setInterval(loop,33);
-    }
+  canvas = document.getElementsByClassName("cube");
+  if( canvas && canvas.getContext ) {
+      ctx = canvas.getContext("2d");
+      setInterval(loop,33);
+  }
 }
 
 function loop() {
     var t = new Array();
 
-    ctx.fillStyle = "rgb(0,0,0)";
+    ctx.fillStyle = "transparent";
     ctx.fillRect(0,0,256,256);
 
     for( var i = 0; i < vertices.length; i++ ) {
@@ -82,7 +83,7 @@ function loop() {
         t.push(p)
     }
 
-    ctx.strokeStyle = "rgb(255,255,255)"
+    ctx.strokeStyle = "white"
 
     for( var i = 0; i < faces.length; i++ ) {
         var f = faces[i]

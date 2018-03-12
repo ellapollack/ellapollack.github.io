@@ -6,7 +6,13 @@
   "author": "Maxwell Pollack",
   "license": "MIT",
   "dependencies": {
-    "jqcloud2": "^2.0.3",
-    "jquery": "^3.3.1"
+    "jqcloud2": "^2.0.3"
+  },
+  "devDependencies": {
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.10"
+  },
+  "scripts": {
+    "build": "webpack src/index.js -d --config webpack.config.js --output dist/bundle.js"
   }
 }
