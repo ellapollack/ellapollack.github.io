@@ -18,6 +18,8 @@ body {
   -webkit-font-smoothing: none;
   -moz-font-smoothing: none;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: geometricPrecision;
+  overflow: hidden;
 }
 
 #name {
@@ -37,12 +39,8 @@ body {
 
 #interests {
   position: absolute;
-  top: 50%;
-  margin-top: -256px;
-  left: 50%;
-  margin-left: -256px;
-  height: 512px;
-  width: 512px;
+  height: 100%;
+  width: 100%;
 }
 
 a {
