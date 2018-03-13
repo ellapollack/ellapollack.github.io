@@ -4,13 +4,12 @@
 }
 
 body {
-  width: 100%;
-  height: 100%;
   margin: 0;
   padding: 0;
   color: white;
   background-color: black;
   font-family: Terminus;
+  font-size: 32px;
   white-space: pre-wrap;
   font-smooth: never;
   -moz-font-smoothing: none;
@@ -22,25 +21,12 @@ body {
   overflow: hidden;
 }
 
-#name {
-  font-size: 28px;
-  text-transform: uppercase;
-  text-align: justify;
-}
-
-.h {
-  font-size: 32px;
-  width: 100%;
-  max-width:512px;
-  display:flex;
-  justify-content: space-around;
-  margin: auto;
-}
-
 #interests {
-  position: absolute;
-  height: 50%;
-  width: 100%;
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
 }
 
 a {
