@@ -26,6 +26,7 @@ body {
   margin: auto;
   display: flex;
   justify-content: space-around;
+  z-index:999999;
 }
 
 #interests {
