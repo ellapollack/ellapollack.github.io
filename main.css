@@ -21,6 +21,13 @@ body {
   overflow: hidden;
 }
 
+#head {
+  max-width: 512px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
 #interests {
   position:absolute;
   top:0;
