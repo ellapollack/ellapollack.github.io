@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 <head>
   <title>Maxwell Pollack</title>
@@ -11,10 +11,11 @@
       margin: 0;
       padding: 0;
       background-color: black;
+      overflow: hidden;
     }
     .speck {
-      width: 1px;
-      height: 1px;
+      width: 1pt;
+      height: 1pt;
       position: absolute;
       background: #fff;
       margin: auto;
@@ -53,14 +54,13 @@
   <a href="resume.svg" style="background-color:rgb(255, 0, 10)">résumé</a>
 </div>
 <script>
-  var div;
-  for (i=0;i<10000;i++) {
-    div = document.createElement('div');
+  for (var i=0;i<10000;i++) {
+    var div = document.createElement('div');
     div.className = 'speck';
     div.style.top = Math.random()*100 + '%';
     div.style.left = Math.random()*100 + '%';
     document.body.appendChild(div);
-  }
+  };
 </script>
 </body>
 </html>
