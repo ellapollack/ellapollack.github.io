@@ -4,25 +4,44 @@
   <title>Maxwell Pollack</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
   <style>
-    html,body {margin: 0; padding: 0; background-color: black;
+    html,body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      background-color: black;
+    }
+    div {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      width: 256px;
+      height: 256px;
+      top: 50%;
+      left: 50%;
+      margin-top: -128px;
+      margin-left: -128px;
     }
     a {
-      display: block;
       text-align: center;
-      font-family: 'Montserrat', cursive;
-      font-size: 20vw;
-      color:black;;
+      font-family: sans-serif;
+      font-size: 32px;
+      font-weight: bolder;
+      color:black;
       text-decoration: none;
+      height: 100%;
+      line-height: 64px;
     }
   </style>
 </head>
 
 <body>
-  <a href="http://maxwellpollack.bandcamp.com" style="background-color:rgb(0, 178, 255)">sound</a>
-  <a href="http://www.instagram.com/joopagogie" style="background-color:rgb(62, 210, 86)">visual</a>
+<div>
+  <a href="http://maxwellpollack.bandcamp.com" style="background-color:rgb(0, 178, 255)">music</a>
+  <a href="http://www.instagram.com/joopagogie" style="background-color:rgb(62, 210, 86)">art</a>
   <a href="http://www.github.com/maxwellpollack" style="background-color:rgb(255, 255, 0)">code</a>
   <a href="resume.svg" style="background-color:rgb(255, 0, 10)">résumé</a>
+</div>
 </body>
 </html>
