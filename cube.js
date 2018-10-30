@@ -63,7 +63,7 @@ var angle = 0;
 var ctx, canvas;
 
 function goCube() {
-  canvas = document.getElementsByClassName("cube");
+  canvas = document.getElementById("cube");
   if( canvas && canvas.getContext ) {
       ctx = canvas.getContext("2d");
       setInterval(loop,33);
@@ -73,17 +73,17 @@ function goCube() {
 function loop() {
     var t = new Array();
 
-    ctx.fillStyle = "transparent";
-    ctx.fillRect(0,0,256,256);
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
 
     for( var i = 0; i < vertices.length; i++ ) {
         var v = vertices[i];
         var r = v.rotateX(0.61803398875*angle).rotateY(1.61803398875*angle).rotateZ(angle);
-        var p = r.project(256,256,256,4);
+        var p = r.project(128,128,128,4.333);
         t.push(p)
     }
 
     ctx.strokeStyle = "white"
+    ctx.lineWidth = 1
 
     for( var i = 0; i < faces.length; i++ ) {
         var f = faces[i]
