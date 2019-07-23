@@ -28,22 +28,27 @@
       margin: auto;
       z-index:1;
     }
-    #block {
+    #cube {
       z-index: 2;
       position: absolute;
-      top: 50%;
       left: 50%;
-      margin-top:-128px;
-      margin-left: -64px;
+      margin-left: -25vh;
+    }
+    #block {
+      width:50vh;
+      position:absolute;
+      top:50%;
+      left:50%;
+      margin-left:-25vh;
     }
     a {
       display: block;
       text-align: center;
       font-family: monospace;
-      font-size: 32px;
+      font-size: 12vh;
       color:black;
       text-decoration: none;
-      line-height: 27px;
+      line-height: 11vh;
     }
   </style>
   <script src="cube.js"></script>
@@ -59,8 +64,8 @@
     document.body.appendChild(div);
   };
 </script>
+<canvas id="cube"></canvas>
 <div id='block'>
-  <canvas id="cube" width="128" height="128"></canvas>
   <a href="pollack_cv.pdf" style="color:rgb(255, 0, 10)">cv</a>
   <a href="http://www.instagram.com/joopagogie" style="color:rgb(255, 255, 0)">art</a>
   <a href="http://www.github.com/maxwellpollack" style="color:rgb(62, 210, 86)">code</a>

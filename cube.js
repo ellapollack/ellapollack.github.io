@@ -73,12 +73,14 @@ function goCube() {
 function loop() {
     var t = new Array();
 
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.clearRect(0, 0, window.innerHeight/2, window.innerHeight/2);
+    ctx.canvas.height = window.innerHeight/2
+    ctx.canvas.width = window.innerHeight/2
 
     for( var i = 0; i < vertices.length; i++ ) {
         var v = vertices[i];
         var r = v.rotateX(0.61803398875*angle).rotateY(1.61803398875*angle).rotateZ(angle);
-        var p = r.project(128,128,128,4.333);
+        var p = r.project(canvas.width,canvas.height,canvas.width,4.333);
         t.push(p)
     }
 
