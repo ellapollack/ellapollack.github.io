@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: maxis.cool
+Token: 0848eb8864f3f479655b7342025fbb5c1b514e8766fddfde9d95d1bc01593bf5
