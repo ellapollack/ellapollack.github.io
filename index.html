@@ -18,58 +18,55 @@
       height: 100%;
       margin: 0;
       padding: 0;
-      background-color: black;
-    }
-    .speck {
-      width: 1px;
-      height: 1px;
-      position: absolute;
-      background: #fff;
-      margin: auto;
-      z-index:1;
-    }
-    #cube {
-      z-index: 2;
-      position: absolute;
-      left: 50%;
-      margin-left: -25vh;
-    }
-    #block {
-      width:50vh;
-      position:absolute;
-      top:50%;
-      left:50%;
-      margin-left:-25vh;
-    }
-    a {
-      display: block;
-      text-align: center;
+      background: url(stars.png);
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      color: #0f0;
       font-family: monospace;
-      font-size: 12vh;
-      color:black;
-      text-decoration: none;
-      line-height: 11vh;
+    }
+
+    a {
+      color: #0ff;
+    }
+
+    body > * {
+      margin: 32px;
+      width: 400px;
+      height: 400px;
+      border: 1px solid white;
+      display: block;
+      background-size: 400px 400px;
+      background-repeat: no-repeat;
+      background-position: center;
     }
   </style>
-  <script src="cube.js"></script>
 </head>
 
 <body>
-<script>
-  for (var i=0;i<1000;i++) {
-    var div = document.createElement('div');
-    div.className = 'speck';
-    div.style.top = Math.random()*100 + '%';
-    div.style.left = Math.random()*100 + '%';
-    document.body.appendChild(div);
-  };
-</script>
-<canvas id="cube"></canvas>
-<div id='block'>
-  <a href="cv.pdf" style="color:rgb(255, 0, 10)">cv</a>
-  <a href="http://www.instagram.com/joopagogie" style="color:rgb(255, 255, 0)">art</a>
-  <a href="http://www.github.com/maxwellpollack" style="color:rgb(62, 210, 86)">code</a>
-  <a href="http://maxwellpollack.bandcamp.com" style="color:rgb(0, 178, 255)">music</a>
-</div>
+
+<pre style="border:0;"><span style="color:#ff0;">
+
+
+
+
+ __  __     ______     __         __         ______
+/\ \_\ \   /\  ___\   /\ \       /\ \       /\  __ \
+\ \  __ \  \ \  __\_  \ \ \____  \ \ \____  \ \ \/\ \
+ \ \_\ \_\  \ \_____\  \ \_____\  \ \_____\  \ \_____\
+  \/_/\/_/   \/_____/   \/_____/   \/_____/   \/_____/</span>
+
+
+                     My name is <span style="color:red;">MAX</span>.
+
+
+          I'm an <a href="https://maxis.cool/cv">audio programmer</a> based in NYC.
+
+
+                  Welcome to my website!</pre>
+<a href="https://maxis.cool/frex" style="background-image: url(assets/frex.png);"></a>
+<a href="https://maxpollack.itch.io/repitch" style="background-image: url(assets/repitch.png); background-size: 130px 241px;"></a>
+<iframe src="https://bandcamp.com/EmbeddedPlayer/album=906644347/size=large/bgcol=333333/linkcol=4ec5ec/minimal=true/transparent=true/" seamless><a href="http://maxwellpollack.bandcamp.com/album/for-my-bean">for my bean by Max Pollack</a></iframe>
+<iframe src="https://bandcamp.com/EmbeddedPlayer/album=3656307988/size=large/bgcol=333333/linkcol=4ec5ec/minimal=true/transparent=true/" seamless><a href="http://maxwellpollack.bandcamp.com/album/waving">Waving by Max Pollack</a></iframe>
 </body>
 </html>
