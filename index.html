@@ -14,27 +14,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     html,body {
-      width: 100%;
-      height: 100%;
       margin: 0;
       padding: 0;
       background: url(stars.png) fixed;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
       color: #0f0;
       font-family: monospace;
+      text-align: center;
     }
 
     a {
       color: #0ff;
     }
 
-    body > * {
+    .title {
+      font-size: 2em;
+      color: #fff;
+      margin: -0.333333333333em 0;
+    }
+
+
+    .box {
       width: 320px;
       height: 320px;
-      border: 0;
-      display: block;
+      border: 1px solid #0ff;
+      margin: 0 auto 3em auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
       background-size: 320px 320px;
       background-repeat: no-repeat;
       background-position: center;
@@ -46,22 +52,25 @@
 
 <pre style="border:0;">
 
+  <img src="https://www.gravatar.com/avatar/225bbca2f53c7b925abcc8b22d5b5d0f?s=320" />
 
 
-
-
-
-
-         Hello! My name is <span style="color:red;">MAX</span>.
-
-
-  I'm an <a href="https://maxis.cool/cv">audio programmer</a> based in NYC.
-
-
-          Welcome to my website!</pre>
-<a href="https://maxis.cool/frex" style="background-image: url(assets/frex.png);"></a>
-<a href="https://maxpollack.itch.io/repitch" style="background-image: url(assets/repitch.png); background-size: 130px 241px;"></a>
-<iframe src="https://bandcamp.com/EmbeddedPlayer/album=906644347/size=large/bgcol=333333/linkcol=4ec5ec/minimal=true/transparent=true/" seamless><a href="http://maxwellpollack.bandcamp.com/album/for-my-bean">for my bean by Max Pollack</a></iframe>
-<iframe src="https://bandcamp.com/EmbeddedPlayer/album=3656307988/size=large/bgcol=333333/linkcol=4ec5ec/minimal=true/transparent=true/" seamless><a href="http://maxwellpollack.bandcamp.com/album/waving">Waving by Max Pollack</a></iframe>
+Hello! My name is <span style="color:red;">MAX POLLACK</span>.</pre>
+<pre>I'm an <a href="https://maxis.cool/cv">audio programmer</a> based in NYC.</pre>
+<pre>Welcome to my website!</pre>
+<pre><span style="font-size:5em; color: #ff0;">&darr;</span>
+</pre>
+<pre class="title">Frequency Explorer</pre>
+<pre>a microtonal additive synthesizer web app</pre>
+<a class="box" href="https://maxis.cool/frex" style="background-image: url(assets/frex.png);"></a>
+<pre class="title">Repitch</pre>
+<pre>a MIDI-controlled harmonizer audio plugin</pre>
+<a class="box" href="https://maxpollack.itch.io/repitch" style="background-image: url(assets/repitch.png); background-size: 130px 241px;"></a>
+<pre class="title">for my bean</pre>
+<pre>synthesizer music for headache relief</pre>
+<iframe class="box" src="https://bandcamp.com/EmbeddedPlayer/album=906644347/size=large/bgcol=333333/linkcol=4ec5ec/minimal=true/transparent=true/" seamless><a href="http://maxwellpollack.bandcamp.com/album/for-my-bean">for my bean by Max Pollack</a></iframe>
+<pre class="title">Waving</pre>
+<pre>electro - acoustic sound art</pre>
+<iframe class="box" src="https://bandcamp.com/EmbeddedPlayer/album=3656307988/size=large/bgcol=333333/linkcol=4ec5ec/minimal=true/transparent=true/" seamless><a href="http://maxwellpollack.bandcamp.com/album/waving">Waving by Max Pollack</a></iframe>
 </body>
 </html>
